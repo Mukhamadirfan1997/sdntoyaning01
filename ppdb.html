@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir PPDB Resmi - SDN Toyaning 01</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-slate-100 font-sans text-slate-900">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center text-blue-700 font-bold hover:text-blue-800 transition">
+                <i class="fas fa-chevron-left mr-2"></i> Kembali ke Beranda
+            </a>
+            <div class="text-right">
+                <h2 class="text-sm font-bold md:text-base">FORMULIR PESERTA DIDIK BARU</h2>
+                <p class="text-[10px] text-slate-500 uppercase tracking-tighter">Berdasarkan Juknis Dapodik Kemdikbud
+                </p>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-2xl overflow-hidden">
+
+            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 m-6">
+                <div class="flex">
+                    <div class="flex-shrink-0"><i class="fas fa-info-circle text-blue-500"></i></div>
+                    <div class="ml-3">
+                        <p class="text-sm text-blue-700 font-medium">
+                            Mohon isi data di bawah ini sesuai dengan **Kartu Keluarga (KK)** dan **Akta Kelahiran**.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <form action="#" method="POST" class="p-8 space-y-10">
+
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-3 border-b pb-2">
+                        <span
+                            class="bg-blue-600 text-white w-8 h-8 flex items-center justify-center rounded-full font-bold">1</span>
+                        <h3 class="text-lg font-bold text-slate-800 uppercase tracking-wide">Identitas Peserta Didik
+                        </h3>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="md:col-span-2">
+                            <label class="block text-sm font-semibold mb-1">Nama Lengkap (Sesuai Akta)</label>
+                            <input type="text" name="nama" required
+                                class="w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none uppercase"
+                                placeholder="CONTOH: BUDI SANTOSO">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-1">Jenis Kelamin</label>
+                            <select name="jk"
+                                class="w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                                <option value="">-- Pilih --</option>
+                                <option value="L">Laki-laki</option>
+                                <option value="P">Perempuan</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-1">NISN (Jika Ada)</label>
+                            <input type="number" name="nisn"
+                                class="w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+                                placeholder="10 Digit NISN">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-1">NIK / No. Paspor</label>
+                            <input type="number" name="nik" required
+                                class="w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+                                placeholder="16 Digit NIK">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-1">Tempat Lahir</label>
+                            <input type="text" name="tempat_lahir" required
+                                class="w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-1">Tanggal Lahir</label>
+                            <input type="date" name="tgl_lahir" required
+                                class="w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-1">Agama & Kepercayaan</label>
+                            <select name="agama"
+                                class="w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                                <option value="islam">Islam</option>
+                                <option value="kristen">Kristen/Protestan</option>
+                                <option value="katolik">Katolik</option>
+                                <option value="hindu">Hindu</option>
+                                <option value="budha">Budha</option>
+                                <option value="khonghucu">Khonghucu</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-3 border-b pb-2">
+                        <span
+                            class="bg-blue-600 text-white w-8 h-8 flex items-center justify-center rounded-full font-bold">2</span>
+                        <h3 class="text-lg font-bold text-slate-800 uppercase tracking-wide">Alamat & Kependudukan</h3>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="md:col-span-2">
+                            <label class="block text-sm font-semibold mb-1">Alamat Jalan</label>
+                            <input type="text" name="alamat"
+                                class="w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+                                placeholder="Nama Jalan, Dusun, atau RT/RW">
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold mb-1">RT</label>
+                                <input type="number" placeholder="00"
+                                    class="w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-1">RW</label>
+                                <input type="number" placeholder="00"
+                                    class="w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-1">Kelurahan/Desa</label>
+                            <input type="text" name="desa" value="Toyaning"
+                                class="w-full px-4 py-2.5 border rounded-lg bg-slate-50">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-1">Kecamatan</label>
+                            <input type="text" value="Rejoso" readonly
+                                class="w-full px-4 py-2.5 border rounded-lg bg-slate-50">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-1">Moda Transportasi</label>
+                            <select
+                                class="w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                                <option value="jalan_kaki">Jalan Kaki</option>
+                                <option value="kendaraan_pribadi">Kendaraan Pribadi</option>
+                                <option value="jemputan">Antar Jemput</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-3 border-b pb-2">
+                        <span
+                            class="bg-blue-600 text-white w-8 h-8 flex items-center justify-center rounded-full font-bold">3</span>
+                        <h3 class="text-lg font-bold text-slate-800 uppercase tracking-wide">Data Ayah & Ibu Kandung
+                        </h3>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold mb-1">Nama Ayah Kandung</label>
+                            <input type="text" name="nama_ayah" required
+                                class="w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-1">Pekerjaan Ayah</label>
+                            <input type="text" name="kerja_ayah"
+                                class="w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-1">Nama Ibu Kandung</label>
+                            <input type="text" name="nama_ibu" required
+                                class="w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-1">No. HP / WhatsApp Wali</label>
+                            <input type="tel" name="wa_wali" required
+                                class="w-full px-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+                                placeholder="08xxxxxx">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-6 border-t flex flex-col md:flex-row gap-4 items-center justify-between">
+                    <p class="text-xs text-slate-500 italic max-w-sm">
+                        Dengan menekan tombol kirim, saya menyatakan bahwa data yang diisi adalah benar dan dapat
+                        dipertanggungjawabkan.
+                    </p>
+                    <button type="submit"
+                        class="w-full md:w-auto bg-blue-700 hover:bg-blue-800 text-white font-bold px-10 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all active:scale-95">
+                        <i class="fas fa-paper-plane mr-2"></i> KIRIM FORMULIR
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <p class="text-center text-slate-400 text-sm mt-8 pb-10">
+            &copy; 2024 Panitia PPDB SDN Toyaning 01. Sistem Informasi Sekolah.
+        </p>
+    </div>
+
+</body>
+
+</html>
