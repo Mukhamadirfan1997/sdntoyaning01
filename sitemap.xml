@@ -1,27 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://www.sdntoyaning01rejoso.my.id/</loc>
+        <loc>https:https://sdntoyaning01rejoso.my.id/</loc>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://www.sdntoyaning01rejoso.my.id/#profil</loc>
+        <loc>https://sdntoyaning01rejoso.my.id/#profil</loc>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.sdntoyaning01rejoso.my.id/#akademik</loc>
+        <loc>https:https://sdntoyaning01rejoso.my.id/#akademik</loc>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.sdntoyaning01rejoso.my.id/#berita</loc>
+        <loc>https://sdntoyaning01rejoso.my.id/#berita</loc>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://www.sdntoyaning01rejoso.my.id/#galeri</loc>
+        <loc>https://sdntoyaning01rejoso.my.id/#galeri</loc>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://www.sdntoyaning01rejoso.my.id/#kontak</loc>
+        <loc>https://sdntoyaning01rejoso.my.id/#kontak</loc>
         <priority>0.7</priority>
     </url>
+    <url>
+    <loc>https://sdntoyaning01rejoso.my.id/ppdb.html</loc>
+    <priority>0.8</priority>
+  </url>
 </urlset>
+
