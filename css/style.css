@@ -708,9 +708,19 @@ header .container {
 }
 
 .berita-card img {
+    position: relative; /* Wajib ada agar z-index berfungsi */
+    z-index: 5;         /* Pastikan lebih tinggi dari elemen dekorasi */
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: auto;
+    display: block;
+}
+
+.berita-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    /* ... kode background gambar bukit/merah ... */
+    z-index: 10; /* Jika ini nilainya besar, maka akan menutupi gambar */
 }
 
 .berita-content {
